@@ -13,7 +13,7 @@ function App() {
     try {
       console.log('Requesting Bluetooth Device...');
       const device = await navigator.bluetooth.requestDevice({
-        filters: [{ name: 'Nano ESP32 ECG' }],
+        filters: [{ name: 'Nano ESP2' }],
         optionalServices: [SERVICE_UUID],
       });
   
