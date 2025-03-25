@@ -10,7 +10,7 @@ function App() {
   const connectToBLE = async () => {
     try {
       const device = await navigator.bluetooth.requestDevice({
-        filters: [{ name: 'Nano ESP32 ECG' }],
+        filters: [{ name: 'Nano ESP2' }],
         optionalServices: [SERVICE_UUID],
       });
 
@@ -41,7 +41,5 @@ function App() {
     </div>
   );
 }
-
-jsdfkjshdkf
 
 export default App;
